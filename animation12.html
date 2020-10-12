@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+        }
+        .main{
+            position: relative;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+       
+        }
+        .container::before{
+            content: " ";
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            width: 1px;
+            height: 200px;
+            background-color:red;
+            border: 1px solid red;
+        }
+        .main div{
+            width: 20px;
+            height: 20px;
+             background-color: black;
+             float: left;
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+      <div class="main">
+        <div class="b1"></div>
+        <div class="b1"></div>
+        <div class="b1"></div>
+      </div>
+   
+  </div>  
+</body>
+</html>

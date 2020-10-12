@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: #050801;
+        color:lightblue;
+        display: flex;
+        justify-content: center;
+        min-height: 100vh;
+        align-items: center;
+        flex-direction: column;
+    }
+    a{
+        text-decoration: none;
+        padding: 15px;
+        letter-spacing: 5px;
+        margin: 50px;
+        font-weight: bold;
+        transition: 0.5s;
+    }
+    a:hover{
+        color:#050801;
+        box-shadow: 0px 0px 10px #03e9f4,
+                   0px 0px 25px #03e9f4,
+                   0px 0px 50px #03e9f4,
+                   0px 0px 200px #03e9f4;
+        background-color:#03e9f4;
+    }
+    a span{
+        position: absolute;
+        display: block;
+    }
+    a span:nth-child(1){
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height:2px;
+        background: linear-gradient (90deg,#03e3f4);
+    }
+</style>
+<body>
+  <a href="#">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+  PRADEEP
+    </a>
+  <a href="#">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+  RATHOR
+    </a>
+  <a href="#">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+  HAMIRPUR
+    </a>
+</body>
+</html>
